@@ -10,7 +10,7 @@
 #include <float.h>
 #include <cmath>
 
-#define PI 3.14159265358979
+//#define PI 3.14159265358979
 #define A 65618
 #define PRAISE "You are an extraordinary being."
 //#define INT_MAX
@@ -18,13 +18,14 @@
 //void smile();
 //void two();
 //void jing(int a);
-#define PI 3.14159
+//#define PI 3.14159
 int main();//声明函数调用
-double LF(double a);        double fl(double *a,double *b);
-void weiba(void);           void chline(char ch,int i,int j);
-void na();                  int nb(int max,int min);                    void bdx(double * a,double * b,double * c);
-void cdl();                 double dao(double a,double b);
-float fm();                 void larger_of(double *c,double *d);
+//double LF(double a);        double fl(double *a,double *b);             void SG(double[],int);  void kb(double[][4],double a[][4],int n);
+//void weiba(void);           void chline(char ch,int i,int j);           double power(double n,int p);/*负整次幂 */    void ddf(double a[]/*空白*/,double b[]/*数据源*/,int n);
+//void copy_arr(double [5],double [5],int );      void copy_ptr(double [5],double [5],int );      void copy_ptrs(double [5],double [5],double [5]);
+//void na();                  int nb(int max,int min);                    void bdx(double * a,double * b,double * c);
+//void cdl();                 double dao(double a,double b);              void to_bass_n(unsigned long n,unsigned short t);
+//float fm();                 void larger_of(double *c,double *d);        int sump(int * start,int * end);        double dxc(double [],int n);
 //void one_three();
 //#define AI[1,2,3,4,5,6,7,8]
 #define BOOK "War and peace"
@@ -35,16 +36,312 @@ float fm();                 void larger_of(double *c,double *d);
 
 
 int main(){
-    double a,b,c;
-    printf("请输入三个变量：\n");
-    scanf("%lf %lf %lf",&a,&b,&c);
-    printf("原始的三个数分别为a=%lf b=%lf c=%lf\n",a,b,c);
-
-    bdx(&a,&b,&c);
-
-    printf("过了函数后的三个数分别为a=%lf b=%lf c=%lf\n",a,b,c);
+    char ab[5];
+    gets(ab);
+    puts(ab);
+    printf("%s",ab);
 
     return 0;
+
+//    /*10.12~13*/
+//    void yhyd/*用户引导*/(double num1[],double num2[],double num3[]);
+//    void zupj/*每组平均值*/(const double num1[],const double num2[],const double num3[],double *p1,double *p2,double *p3);
+//    void sypj/*所有平均*/(double p1,double p2,double p3,double *sp);
+//    void qbzd/*15个数中的最大值*/(double num1[],double num2[],double num3[],int n,double *max1,double *max2,double *max3,double *max);
+//    void dyjg/*打印结果*/(double num1[],double num2[],double num3[],
+//                          double *p1,double *p2,double *p3,double *sp,double *max1,double *max2,double *max3,double max);
+//    double num1[5],num2[5],num3[5];
+//    double p1=0,p2=0,p3=0,sp=0;
+//    double max1=0,max2=0,max3=0,max;
+//
+//
+//    yhyd(&num1[5],&num2[5],&num3[5]);
+//    zupj(&num1[5],&num2[5],&num3[5],&p1,&p2,&p3);
+//    sypj(p1,p2,p3,&sp);
+//    qbzd(&num1[5],&num2[5],&num3[5],5,&max1,&max2,&max3,&max);
+//    dyjg(&num1[5],&num2[5],&num3[5],&p1,&p2,&p3,&sp,&max1,&max2,&max3,max);
+//
+//    return 0;
+
+///*10.8*/
+//    //void ddf(double a[]/*空白*/,double b[]/*数据源*/,int n);
+//    double dd1[7]={111,22,3,445,5.5,66,77};
+//    double dd2[3];
+//
+//    printf("dd1初始数组为：\n");
+//    for (int i = 0; i < 7; ++i) {
+//        printf("%6.3f ",dd1[i]);
+//    }
+//    printf("\ndd2初始数组为：\n");
+//    for (int i = 0; i < 3; ++i) {
+//        printf("%6.3f ",dd2[i]);
+//    }
+//    ddf(dd2,dd1,3);
+//
+//    printf("\ndd2复制后数组为：\n");
+//    for (int i = 0; i < 3; ++i) {
+//        printf("%6.3f ",dd2[i]);
+//    }
+//
+//
+//    return 0;
+
+
+///*10.7*/
+//    //void kb(double[][4],double a[][4],int n);
+//    double sz1[5][4];
+//    double dkbsz[5][4];
+//    printf("数组原始数据为：\n");
+//    for (int i = 0; i <5; ++i) {
+//        for (int j = 0; j < 4; ++j) {
+//            printf("%6.3f ",sz1[i][j]);
+//        }
+//        printf("\n");
+//    }
+//    for (int i = 0; i < 5; ++i) {
+//        for (int j = 0; j < 4; ++j) {
+//            sz1[i][j]=j*j*i+2.2*i;
+//        }
+//    }
+//    printf("\n该数组的初始化数据为：\n");
+//    for (int i = 0; i <5; ++i) {
+//        for (int j = 0; j < 4; ++j) {
+//            printf("%6.3f ",sz1[i][j]);
+//        }printf("\n");
+//    }
+//    printf("待复制的数组初始元素：\n");
+//    for (int i = 0; i <5; ++i) {
+//        for (int j = 0; j < 4; ++j) {
+//            printf("%6.3f ",dkbsz[i][j]);
+//        }
+//        printf("\n");
+//    }
+//
+//    kb(dkbsz,sz1,4);
+//
+//    printf("复制之后的数组元素：\n");
+//    for (int i = 0; i <5; ++i) {
+//        for (int j = 0; j < 4; ++j) {
+//            printf("%6.3f ",dkbsz[i][j]);
+//        }
+//        printf("\n");
+//    }
+//
+//
+//    return 0;
+
+    /*倒序排序*/
+//    double source[12]={2.5,3.2,1.2,1.6,2.4,0.1,5.2,0.9,0.3,0.9,1.4,7.3};
+//    printf("数组未更改前：\n ");
+//    for (int i = 0; i < 12; ++i) {
+//        printf("%.3f ",source[i]);
+//    }
+//    SG(source,12);
+//    printf("\n更改后的数组元素：\n ");
+//    for (int i = 0; i < 12; ++i) {
+//        printf("%.3f ",source[i]);
+//    }
+//
+//
+//    return 0;
+
+
+
+    //int N=0;char d;
+//    scanf("%d",&N);
+//
+//    int sum[N];
+//
+//    for (int i = 0; i < N; ++i) {
+//        if ((d=getchar())==' ')break;
+//        sum[i]=(int)d;
+//        //sum[i]=getchar();
+//       // scanf("%d",sum[i]);
+//    }
+//    for (int i = 0; i < N; ++i) {
+//
+//        printf("%s",sum[i]);
+//    }
+
+//        int a=0,sum=0;
+//        double you[15]={0.8,0.8,0.8,0.8,0.8,1,1,1,1,1.8,1.8,1.8,1.8,1.8,1.8,};
+//
+//    for (int i = 1; i <= 15; ++i) {
+//        if (i=1){
+//            for (int j = 0; j < 15; ++j) {
+//
+//            }
+//        }
+//    }
+//
+//
+//
+//    return 0;
+//
+//    double adb[17]={3.666,6,4,3,7,8,33,2,99.99,6.342,5,4,6,7,8,86,44};
+//
+//    printf("adb的极差=%f\n",dxc(adb,17));
+//
+//    return 0;
+
+
+
+/************10.5编程练习2******************//*你这只是显示，而非为了更改，立意错了*///###注意，内容在函数定义里，
+//往后面翻去
+// void copy_arr(double [5],double [5],int );
+// void copy_ptr(double [5],double [5],int );
+// void copy_ptrs(double [5],double [5],double [5]);
+//    double source[5]={1.1,2.2,3.3,4.4,5.5};
+//    double target1[5];
+//    double target2[5];
+//    double target3[5];
+//    for (int i = 0; i < 5; ++i) {
+//        printf("初始target1[%d]=%f target2[%d]=%f target3[%d]=%f  source[%d]=%f\n",i,target1[i],i,target2[i],i,target3[i],i,source[i]);
+//    }printf("\n");
+//
+//
+//    copy_arr(target1,source,5);
+//    for (int i = 0; i < 5; ++i) {
+//        printf("target1[%d]=%f  source[%d]=%f\n",i,target1[i],i,source[i]);
+//    }
+//    printf("\n");
+//    copy_ptr(target2,source,5);
+//    for (int i = 0; i < 5; ++i) {
+//        printf("target2[%d]=%f  source[%d]=%f\n",i,target2[i],i,source[i]);
+//    }printf("\n");
+//
+//    copy_ptrs(target3,source,source+5);
+//    for (int i = 0; i < 5; ++i) {
+//        printf("target3[%d]=%f  source[%d]=%f\n",i,target3[i],i,source[i]);
+//    }printf("\n");
+//
+//    return 0;
+
+
+//    show((int[4]){8,3,9,2},4);
+//    show2((int [][3]){{8,3,9},{5,4,1}},2);
+
+//    double trots[20];
+//    void data(double trots[],int n);
+//    void data(int a,double trots[a]);
+//
+//    short clops[10][30];
+//    void datr(short clops[][30],int n);
+//    void datr(int a,int b,short clops[a][b]);
+//
+//    long  shots[5][10][15];
+//    void ggh(long shots[][10][15],int n);
+//    void ggh(int a ,int b ,int c,long ggh[a][b][c] );
+
+    //
+//    int abd[6]={1,2,3,8,16,32};
+//    abd[2];
+//    int acc[100]={[99]=-1};
+//
+//    int aff[100] = {[5]=101,[10]=101,101,101,[3]=101};
+
+
+//    int digits[10];
+//    float rates[6];
+//    int mat[3][5];
+//    int *psa[20];
+//    char (*pstr)[20];
+
+//    int grid[30][100];
+//
+//    /**/    &grid[22][56];//*((*grid+22)+56);
+//            grid+22;*grid+22;
+//            grid;grid+0;*grid;**grid
+
+//    int n=5;
+//    double x;
+//    int* p1=&n;
+//    double *pd=&x;
+//
+//    x=n;
+//    pd=p1;
+
+//    return 0;
+
+//    int zippo[4][2]={{2,4},{6,8},{1,3},{5,7}};
+//    int (*pz)[2];
+//
+//    pz=zippo;
+//
+//    printf("*(*(pz+2)+1)=%d     *(pz+2)+1=%d    *(pz+2)=%d\n",*(*(pz+2)+1),*(pz+2)+1,*(pz+2));
+//    printf("*(*(zippo+2)+1)=%d     *(zippo+2)+1=%d    *(zippo+2)=%d\n",*(*(zippo+2)+1),*(zippo+2)+1,*(zippo+2));
+//    printf("*(*(pz+2)+1)=%d     **(pz+2)+1=%d    **(pz+2)=%d\n",*(*(pz+2)+1),**(pz+2)+1,**(pz+2));
+//
+//
+//    return 0;
+
+
+
+//    int a[5]={10,15,20,25,30};
+//    int *p=a,*q=p;
+//
+//    q=p+5;
+//    printf("能被2整除的是：\n");
+//    while (p<q){
+//        if (*p%2==0)
+//            printf("%d ",*p);
+//        p=p+1;
+//
+//    }
+//
+//    return 0;
+
+
+    /*数组越过最后一位*/
+    /*结论：越过一位后为0，它是按照指针地址大小来循环的，设置大于数组十位数的时候数据呈现不不规律
+     * 以上，已经算数明确*/
+//
+//#define SIZE 10
+//    int marbles[SIZE] = {20,10,5,39,4,16,19,26,31,20};
+//    long answer;
+//    answer = sump(marbles,marbles + SIZE +11);
+//    printf("这个数字是 %ld\n",answer);
+//
+//    return 0;
+
+
+//    int shi[9];
+//
+//    int i;
+//
+//    for (int j = 0; j < 9; ++j) {
+//        shi[j]=j+1;
+//    }
+//    for (i = 0; i < 9; ++i) {
+//        printf("%2d %14d\n",i,shi[i]);
+//    }
+//
+//    return 0;
+
+    /*9.10驱动程序*/
+//    unsigned long number;
+//    unsigned short target;
+//    printf("输入两个数，介于2~10：\n");
+//    scanf("%lu %hu",&number,&target);
+//    to_bass_n(number,target);
+//
+//    return 0;
+
+///*第九章练习8*/
+//
+//    return 0;
+
+    /*三数判断大小*/
+//    double a,b,c;
+//    printf("请输入三个变量：\n");
+//    scanf("%lf %lf %lf",&a,&b,&c);
+//    printf("原始的三个数分别为a=%lf b=%lf c=%lf\n",a,b,c);
+//
+//    bdx(&a,&b,&c);
+//
+//    printf("过了函数后的三个数分别为a=%lf b=%lf c=%lf\n",a,b,c);
+//
+//    return 0;
 
 //    double a,b;
 //    printf("请输入两个值：\n");
@@ -1104,24 +1401,280 @@ int main(){
 }
 
 
+
+
+//10.13 函数组
+void yhyd/*用户引导*/(double num1[],double num2[],double num3[]){
+    printf("请输入三组数组,每组五个double类型的数。\n请输入第一个数组：\n");
+    for (int i = 0; i < 5; ++i) {
+        scanf("%lf",&num1[i]);
+    }
+    printf("请输入第二组数组：\n");
+    for (int i = 0; i < 5; ++i) {
+        scanf("%lf",&num2[i]);
+    }
+    printf("请输入第三组数组：\n");
+    for (int i = 0; i < 5; ++i) {
+        scanf("%lf",&num3[i]);
+    }
+    printf("您输入的数组为：\n");
+    printf("第一组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num1[i]);
+    }
+    printf("\n第二组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num2[i]);
+    }
+    printf("\n第三组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num3[i]);
+    }
+}
+void zupj/*每组平均值*/(const double num1[],const double num2[],const double num3[],double *p1,double *p2,double *p3){
+    //double p1,p2,p3;
+    for (int i = 0; i < 5; ++i) {
+        *p1+=num1[i];
+    }printf("\np1总和=%7.3f",*p1);
+    for (int i = 0; i < 5; ++i) {
+        *p2+=num2[i];
+    }printf("   p2总和=%7.3f",*p2);
+    for (int i = 0; i < 5; ++i) {
+        *p3+=num3[i];
+    }printf("   p3总和=%7.3f",*p3);
+
+    printf("\n第一组平均值：%6.3f\n第二组平均值：%6.3f\n第三组平均值：%6.3f\n",*p1/5,*p2/5.0,*p3/5.0);
+}
+void sypj/*所有平均*/(double p1,double p2,double p3,double *sp){
+*sp=(p1+p2+p3)/15.0;
+    printf("所有数平均值为：%6.3f\n",*sp);
+}
+void qbzd/*15个数中的最大值*/(double num1[],double num2[],double num3[],int n,double *max1,double *max2,double *max3,double *max){
+    //double max1=0,max2=0,max3=0,max;
+    for (int i = 0; i < n; ++i) {
+        if (*max1 < num1[i])*max1 = num1[i];
+    }printf("第一组最大值：%6.3f",*max1);
+    for (int i = 0; i < n; ++i) {
+        if (*max2<num2[i])*max2=num2[i];
+    }printf("第二组最大值：%6.3f",*max2);
+    for (int i = 0; i < n; ++i) {
+        if (*max3<num3[i])*max3=num3[i];
+    }printf("第三组最大值：%6.3f",*max3);
+
+    if (*max1>*max2)*max=*max1;
+    else *max=*max2;
+    if (*max<*max3)*max=*max3;
+    printf("\n所有最大值为：%7.3f\n",*max);
+}
+void dyjg/*打印结果*/(double num1[],double num2[],double num3[],
+                  double *p1,double *p2,double *p3,double *sp,
+                  double *max1,double *max2,double *max3,double max){
+    printf("*************************************************\n");
+    printf("用户所输入数据的所有结果：\n");
+    printf("三个数组分别为：\n");
+    printf("第一组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num1[i]);
+    }
+    printf("\n第二组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num2[i]);
+    }
+    printf("\n第三组 ");
+    for (int i = 0; i < 5; ++i) {
+        printf("%6.3lf",num3[i]);
+    }
+    printf("\n每个数组的平均值为：");
+    printf("\n第一组平均值：%6.3f\n第二组平均值：%6.3f\n第三组平均值：%6.3f\n",*p1/5,*p2/5.0,*p3/5.0);
+    printf("所有数平均值为：%6.3f\n",*sp);
+    printf("所有最大值为：%7.3f\n",max);
+
+    printf("*************************************************\n");
+}
+
+
+
+
+
+
+
+//10.13 函数组
+
+
+void ddf(double a[]/*空白*/,double b[]/*数据源*/,int n){
+    int j=n-1;
+    for (int i = 0; i < 3; ++i) {
+//        j -= 1;
+        a[i] = b[j];
+        j++;
+    }
+}
+
+
+
+void kb(double a[][4],double b[][4],int n){
+    for (int i = 0; i < 5; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            a[i][j]=b[i][j];
+        }
+    }
+
+
+}
+
+
+/*倒序排序*/
+
+void SG(double a[],int n){
+
+    for (int i = 0; i < n-1; ++i) {
+        for (int j = 0; j < n-1; ++j) {
+            if (a[j]<a[j+1]){
+                double count=0;
+                count = a[j];
+                a[j]=a[j+1];
+                a[j+1]=count;
+            }
+        }
+    }
+
+
+}
+
+
+/*极差*/
+
+double dxc(double a[],int n){
+    double jc;
+    double max,min;max=min=a[0];
+    for (int i = 0; i < n; ++i) {
+        if (min>a[i]){
+            min=a[i];
+        }
+        if (max<a[i]){
+            max=a[i];
+        }
+    }
+    //jc=(max-min);
+    return max-min;
+}
+
+
+
+/*10.5.2*/
+
+void copy_ptrs(double a[5],double b[5],double c[5]){
+    double *pe;
+    pe=c;
+    int g=(c-b)-1;
+    printf("g=%d\n",g);
+
+    for (  ; pe > b; --pe) {
+        a[g]=b[g];g--;
+    }
+}
+
+void copy_ptr(double a[5],double b[5],int n){
+//double *ag=a,*bg=b;
+    for (int i = 0; i < n; ++i) {
+        *(a+i) = *(b+i);
+    }
+}
+
+void copy_arr(double a[5],double b[5],int n){
+
+    for (int i = 0; i < n; ++i) {
+        a[i]=b[i];
+    }
+}
+
+
+
+/*数组超过一位限制（试验）*/
+
+
+int sump(int * start,int * end){
+    int total = 0;
+    while (start < end){
+        total += *start;
+        start++;
+    }
+    return total;
+}
+
+/*参数循环递归*/
+void to_bass_n(unsigned long n,unsigned short t){
+    if (t<2||t>10){
+        printf("请输入2~10之间的数\n");
+        return;
+    }
+    int r;
+    r=n%t;
+    if (n>=2)to_bass_n(n/t,t);
+    printf("%d",r);
+}
+
+
+double power(double n,int p){
+    double pow=1;int i;
+
+    if (n==0&&p==0){
+        printf("0 的 0 次幂为1\n");
+        return 1;
+    }
+    if (n==0){
+        return 0;
+    }
+    if (p==0)return 1;
+    //循环
+    if (p>0){
+        for (int i = 1; i <= p; ++i) {
+            pow *= n;
+            return pow;
+        }}
+        else
+        {
+            for (int i = 1; i <= -p; ++i) {
+                pow *= n;
+                return 1/pow;
+            }
+        }
+    }
+    //递归
+//    if (p>0)return n* power(n,p-1);/*正p次幂的递归*/
+//    else
+//        return power(n,p+1)/n;//负p次幂的递归
+
+
+
+
 void bdx(double * a,double * b,double * c){
-    double g;
-    if (*a>*b){
-        g=*a;
-        *a=*b;
-        *c=g;
+    double g,D=0,Z=0,X=0;int l=1;
+    while (*a>*b&&*a>*c&&l==1){
+        D=*a;
+        if (*b>*c){
+            Z=*b;X=*c;
+        }else {Z=*c;X=*b;}
+        l--;*a=D;*b=Z;*c=X;
+        printf("函数内的三个数分别为a=%lf b=%lf c=%lf\n",*a,*b,*c);
     }
-    if (*a>*c){
-        g=*a;
-        *a=*c;
-        *c=g;
+    while (*b>*a&&*b>*c&&l==1){
+        D=*b;
+        if (*a>*c){
+            Z=*a;X=*c;
+        }else {Z=*c;X=*a;}
+        l--;*a=D;*b=Z;*c=X;
+        printf("函数内的三个数分别为a=%lf b=%lf c=%lf\n",*a,*b,*c);
     }
-    if (*b>*c){
-        g=*b;
-        *b=*c;
-        *c=g;
+    while (*c>*a&&*c>*b&&l==1){
+        D=*c;
+        if (*a>*b){
+            Z=*a;X=*b;
+        }else {Z=*b;X=*a;}
+        l--;*a=D;*b=Z;*c=X;
+        printf("函数内的三个数分别为a=%lf b=%lf c=%lf\n",*a,*b,*c);
     }
-    //*a=q;*b=w;*c=e;
+    *a=D;*b=Z;*c=X;
     printf("函数内的三个数分别为a=%lf b=%lf c=%lf\n",*a,*b,*c);
 }
 
